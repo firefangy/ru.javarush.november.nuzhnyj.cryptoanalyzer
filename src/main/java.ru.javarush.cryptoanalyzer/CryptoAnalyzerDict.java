@@ -1,4 +1,4 @@
-package src.main.java.ru.javarush.cryptoanalyzer;
+package main.java.ru.javarush.cryptoanalyzer;
 
 import java.io.IOException;
 import java.nio.file.Files;

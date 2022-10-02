@@ -1,4 +1,4 @@
-package src.main.java.ru.javarush.cryptoanalyzer;
+package main.java.ru.javarush.cryptoanalyzer;
 
 public class CryptoAnalyzerKey {
     private String key;

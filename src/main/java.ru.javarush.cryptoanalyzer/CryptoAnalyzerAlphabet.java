@@ -1,4 +1,4 @@
-package src.main.java.ru.javarush.cryptoanalyzer;
+package main.java.ru.javarush.cryptoanalyzer;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,7 +9,7 @@ class CryptoAnalyzerAlphabet {
     }
 
     static final String ALPHABET_SYMBOLS = "abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLRSTUVWXYZ.,:-!? ";
-    static final int ALPABET_LENGTH = ALPHABET_SYMBOLS.length();
+    static final int ALPHABET_LENGTH = ALPHABET_SYMBOLS.length();
 
     static List<Character> getAlphabetSymbolsList() {
         return ALPHABET_SYMBOLS.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
@@ -19,10 +19,10 @@ class CryptoAnalyzerAlphabet {
         return getAlphabetSymbolsList().indexOf(letter);
     }
 
-    static char getCharByPosition(int position){
-        int normalizedPosition = position % ALPABET_LENGTH;
-        if (normalizedPosition < 0){
-            normalizedPosition +=ALPABET_LENGTH;
+    static char getCharByPosition(int position) {
+        int normalizedPosition = position % ALPHABET_LENGTH;
+        if (normalizedPosition < 0) {
+            normalizedPosition += ALPHABET_LENGTH;
         }
         return getAlphabetSymbolsList().get(normalizedPosition);
     }
